@@ -1,14 +1,11 @@
 <template>
   <div>From Input Binding</div>
   <div>{{ text }}</div>
-  <input type="text" :value="text" @input="inputText" />
+  <input type="text" :value="text" @input="(e) => (text = e.target.value)" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 const text = ref('Hello')
-const inputText = (e) => {
-  console.log(e.target.value)
-  text.value = e.target.value
-}
+// const inputText = (e) => (text.value = e.target.value)
 </script>
