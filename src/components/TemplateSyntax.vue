@@ -3,6 +3,7 @@ var msg = 'Hello Message'
 var rawHtml = '<h1>Hello</h1>'
 var myId = 'myId1'
 var color = 'blue'
+var isDisable = true
 </script>
 
 <template>
@@ -10,4 +11,5 @@ var color = 'blue'
   <div v-html="rawHtml"></div>
   <div :id="myId"></div>
   <font :color="color">Red</font>
+  <button :disabled="isDisable">isEnable</button>
 </template>
