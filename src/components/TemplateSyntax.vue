@@ -3,7 +3,12 @@ var msg = 'Hello Message'
 var rawHtml = '<h1>Hello</h1>'
 var myId = 'myId1'
 var color = 'blue'
-var isDisable = true
+var isDisable = false
+var objectOfAttrs = {
+  id: 'container',
+  class: 'wrapper',
+  style: 'background-color:green',
+}
 </script>
 
 <template>
@@ -12,4 +17,5 @@ var isDisable = true
   <div :id="myId"></div>
   <font :color="color">Red</font>
   <button :disabled="isDisable">isEnable</button>
+  <div v-bind="objectOfAttrs">Background green</div>
 </template>
