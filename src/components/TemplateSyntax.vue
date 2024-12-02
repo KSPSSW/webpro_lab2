@@ -9,6 +9,8 @@ var objectOfAttrs = {
   class: 'wrapper',
   style: 'background-color:green',
 }
+var number = 20
+var ok = true
 </script>
 
 <template>
@@ -18,4 +20,6 @@ var objectOfAttrs = {
   <font :color="color">Red</font>
   <button :disabled="isDisable">isEnable</button>
   <div v-bind="objectOfAttrs">Background green</div>
+  <div>{{ number + 1 }}</div>
+  <div>{{ ok ? 'Yes' : 'No' }}</div>
 </template>
